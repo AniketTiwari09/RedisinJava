@@ -1,0 +1,1 @@
+FROM redislabs/memtier_benchmark:latest
