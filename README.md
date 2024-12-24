@@ -20,7 +20,7 @@ A simple Redis-like server implemented in Java, supporting basic `GET` and `SET`
 
 ### Setup
 1. **Clone the Repository**:
-   ```bash
+   ```
    git clone https://github.com/AniketTiwari09/RedisinJava.git
    cd RedisClone
 
