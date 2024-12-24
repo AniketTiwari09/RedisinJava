@@ -26,19 +26,19 @@ A simple Redis-like server implemented in Java, supporting basic `GET` and `SET`
 
 2. Compile the Code:
 
-   ```bash
+   ```
     javac -d ./out src/RedisMain.java
   
 3. Run the Server:
 
-   ```bash
+   ```
     java -cp ./out info.gamlor.redis.RedisMain
 
 The server listens on 0.0.0.0:16381.
 
 Test with Redis CLI:
 
-     ```bash
+     ```
       redis-cli -h 127.0.0.1 -p 16381
       SET key value
       GET key
@@ -46,7 +46,7 @@ Test with Redis CLI:
 Benchmarking
 Run performance tests using Docker:
 
-     ```bash
+     ```
       docker run --name redisb --rm memtier_benchmark \
       --server=127.0.0.1 --port=16381 \
       -t 8 -c 32 --test-time=30 --pipeline=30
