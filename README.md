@@ -38,18 +38,21 @@ The server listens on 0.0.0.0:16381.
 
 Test with Redis CLI:
 
-   ```
-      redis-cli -h 127.0.0.1 -p 16381
-      SET key value
-      GET key
+      ```
+         redis-cli -h 127.0.0.1 -p 16381
+         SET key value
+         GET key
+
 
 Benchmarking
+
+
 Run performance tests using Docker:
 
-   ```
-      docker run --name redisb --rm memtier_benchmark \
-      --server=127.0.0.1 --port=16381 \
-      -t 8 -c 32 --test-time=30 --pipeline=30
+      ```
+         docker run --name redisb --rm memtier_benchmark \
+         --server=127.0.0.1 --port=16381 \
+         -t 8 -c 32 --test-time=30 --pipeline=30
 
 Author
 Aniket Tiwari
